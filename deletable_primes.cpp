@@ -53,15 +53,15 @@ int get_length(unsigned long p)
   return floor(log10(p))+1;
 }
 
-bool is_prime(unsigned long a)
+bool is_prime(unsigned long p)
 {
-  if(a<=1)
+  if(p<=1)
   {
     return false;
   }
-  for(int i = 2; i <= sqrt(a); i++)
+  for(int i = 2; i <= sqrt(p); i++)
   {
-    if(a%i == 0)
+    if(p%i == 0)
     {
       return false;
     }
